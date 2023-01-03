@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+
+  nginx:
+    container_name: nginx
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
+      - ./logs:/logs
+      - ./www:/var/www
+

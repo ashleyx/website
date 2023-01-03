@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "FiraCode" ;
+	src: url('../fonts/FiraCode/ttf/FiraCode-Retina.ttf');
+}
+
+
+body{
+	background-color:#104031;
+	color:#e1f7f0;
+	font-family:"FiraCode";
+}
+
+@media (max-width: 1200px) { 
+	img{
+		width:30%;
+		height:auto;
+	}
+
+}
